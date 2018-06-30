@@ -631,7 +631,7 @@ PlayerSettings:
   facebookSdkVersion: 7.9.4
   apiCompatibilityLevel: 2
   cloudProjectId: 82d54e00-b05b-4e7f-b3cd-9e3ea78083e9
-  projectName: Test Project
+  projectName: Space Shooter
   organizationId: allegretti813
   cloudEnabled: 0
   enableNativePlatformBackendsForNewInputSystem: 0
