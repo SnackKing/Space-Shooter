@@ -25,6 +25,13 @@ public class DamageHandler : MonoBehaviour {
             health--;
             gameObject.layer = 10;
             invulTime = invulnPeriod;
+         
+
+            if (collision.gameObject.tag == "PlayerRay" && gameObject.tag == "Enemy")
+            {
+                EnemyShip ship = gameObject.GetComponent<EnemyShip>();
+                PlayerShip.increaseScore(ship.pointValue);
+            }
         }
         
 

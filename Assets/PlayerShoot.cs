@@ -8,6 +8,7 @@ public class PlayerShoot : MonoBehaviour {
     float fireCooldown = 0;
     public float fireDelay;
     private PlayerShip player;
+    
 	// Use this for initialization
     void Awake()
     {
@@ -25,7 +26,6 @@ public class PlayerShoot : MonoBehaviour {
         if (Input.GetButton("Fire1") && fireCooldown < 0)
         {
             fireCooldown = fireDelay;
-            Debug.Log("Fire!");
             Transform frontGun = transform.Find("frontGun");
             Instantiate(bulletPrefab, frontGun.position, new Quaternion(0, 180, 90,0));
         }

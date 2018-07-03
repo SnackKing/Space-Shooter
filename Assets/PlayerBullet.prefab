@@ -26,8 +26,8 @@ GameObject:
   - component: {fileID: 114166206351678422}
   - component: {fileID: 114671463102789738}
   m_Layer: 8
-  m_Name: BulletPrefab
-  m_TagString: Untagged
+  m_Name: PlayerBullet
+  m_TagString: PlayerRay
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -115,6 +115,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxSpeed: 10
+  isMovingRight: 1
 --- !u!114 &114671463102789738
 MonoBehaviour:
   m_ObjectHideFlags: 1

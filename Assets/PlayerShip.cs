@@ -1,17 +1,27 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerShip : MonoBehaviour
 {
     public float speed = 6;
     public float fireCoolDown = 0.25f;
+    private static int score = 0;
+    public static Text countText;
     // Use this for initialization
-    void Start()
+   public void Start()
     {
+        countText = GameObject.Find("Canvas/Score Text").GetComponent<Text>();
+        countText.text = "Score: 0";
 
     }
+    public static void increaseScore(int amount)
+    {
+        score += amount;
+        countText.text = "Score: " + score.ToString();
 
+    }
     // Update is called once per frame
     void Update()
     {
@@ -71,7 +81,7 @@ public class PlayerShip : MonoBehaviour
         {
             newPos.x = currentLeftBound + 0.05f;
             transform.position = newPos;
-            Debug.Log("Too far left");
+           // Debug.Log("Too far left");
 
         }
         else if (transform.position.x >= currentRightBound)

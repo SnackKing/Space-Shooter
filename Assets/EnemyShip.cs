@@ -6,6 +6,7 @@ public class EnemyShip : MonoBehaviour {
 
     public float speed = 5f;
     public float fireCoolDown = 0.25f;
+    public int pointValue = 1;
     // Use this for initialization
     void Start () {
 		
