@@ -5,9 +5,10 @@ using UnityEngine.UI;
 
 public class PlayerShip : MonoBehaviour
 {
-    public float speed = 6;
-    public float fireCoolDown = 0.25f;
-    private static int score = 0;
+    public static float speed = 6;
+    public static float fireCoolDown = 0.25f;
+    public static float damage = 1;
+    public static int score = 0;
     public static Text countText;
     public static Text healthText;
     // Use this for initialization

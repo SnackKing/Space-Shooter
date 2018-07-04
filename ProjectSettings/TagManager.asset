@@ -14,6 +14,7 @@ TagManager:
   - Coin
   - PlayerRay
   - Rocket
+  - Upgrade
   layers:
   - Default
   - TransparentFX
@@ -71,4 +72,7 @@ TagManager:
     locked: 0
   - name: VFX
     uniqueID: 738997965
+    locked: 0
+  - name: Upgrade
+    uniqueID: 1776851855
     locked: 0

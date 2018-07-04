@@ -7,13 +7,11 @@ public class PlayerShoot : MonoBehaviour {
     
     float fireCooldown = 0;
     public float fireDelay;
-    private PlayerShip player;
     
 	// Use this for initialization
     void Awake()
     {
-        player = GetComponent<PlayerShip>();
-        fireDelay = player.fireCoolDown;
+        fireDelay = PlayerShip.fireCoolDown;
     }
 	void Start () {
 		

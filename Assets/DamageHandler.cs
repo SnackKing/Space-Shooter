@@ -32,7 +32,7 @@ public class DamageHandler : MonoBehaviour {
                 EnemyShip ship = gameObject.GetComponent<EnemyShip>();
                 PlayerShip.updateScore(ship.pointValue);
             }
-            else if(collision.gameObject.tag == "Enemy")
+            else if(gameObject.tag == "Player")
             {
                 PlayerShip.updateHealth(health);
             }
