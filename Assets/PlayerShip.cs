@@ -9,17 +9,25 @@ public class PlayerShip : MonoBehaviour
     public float fireCoolDown = 0.25f;
     private static int score = 0;
     public static Text countText;
+    public static Text healthText;
     // Use this for initialization
    public void Start()
     {
         countText = GameObject.Find("Canvas/Score Text").GetComponent<Text>();
+        healthText = GameObject.Find("Canvas/Health Text").GetComponent<Text>();
         countText.text = "Score: 0";
+        healthText.text = "Health: 3";
 
     }
-    public static void increaseScore(int amount)
+    public static void updateScore(int amount)
     {
         score += amount;
         countText.text = "Score: " + score.ToString();
+
+    }
+    public static void updateHealth(int newHealth)
+    {
+        healthText.text = "Health: " + newHealth.ToString();
 
     }
     // Update is called once per frame
