@@ -15,7 +15,7 @@ public class UpgradeShip : MonoBehaviour {
         Vector3 shipPos = transform.position;
         shipPos.y += 10;
         Debug.Log(shipPos);
-        infoText = GameObject.Find("Canvas/InfoText").GetComponent<Text>();
+        infoText = GameObject.Find(gameObject.name + "/WorldCanvas/upgradeText").GetComponent<Text>();
        // infoText.transform.position = shipPos;
         RectTransform rt = infoText.GetComponent<RectTransform>();
         rt.anchoredPosition = shipPos;
@@ -28,8 +28,8 @@ public class UpgradeShip : MonoBehaviour {
             if(PlayerShip.score <= cost)
             {
                 //Player has insufficient points
-                Debug.Log("Not enough points");
                 infoText.text = "Not enough points";
+              
             }
             else
             {

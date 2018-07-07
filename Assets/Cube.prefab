@@ -123,4 +123,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyPrefab: {fileID: 1613636668996614, guid: 16df80c06c3d9b54493a2b7ca2ce2b87,
     type: 2}
-  numEnemies: 3
+  gunshipPrefab: {fileID: 1960723510578364, guid: 3b600346fe71106479e465a9a217a9f7,
+    type: 2}
+  numShips: 0
+  numGunships: 0
